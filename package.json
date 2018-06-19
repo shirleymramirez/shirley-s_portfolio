@@ -1,0 +1,36 @@
+{
+    "name": "shirley-s_portfolio",
+    "version": "1.0.0",
+    "description": "Shirley's Portfolio in React",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "start": "webpack --mode development",
+        "build": "webpack --mode production",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shirleymramirez/shirley-s_portfolio.git"
+    },
+    "author": "Shirley Ramirez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shirleymramirez/shirley-s_portfolio/issues"
+    },
+    "homepage": "https://github.com/shirleymramirez/shirley-s_portfolio#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "webpack": "^4.12.0",
+        "webpack-cli": "^3.0.8"
+    },
+    "dependencies": {
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1"
+    }
+}
