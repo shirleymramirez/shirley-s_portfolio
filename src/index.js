@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
-// const Index = () => {
-//   return <div>Hello React!</div>;
-// };
-
-ReactDOM.render(<App />, document.getElementById("index"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("index")
+);
