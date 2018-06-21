@@ -3,16 +3,12 @@ import { Navbar, NavItem } from "react-materialize";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-  return (
-    <div>
+  return <div>
       <Navbar brand="Shirley Ramirez" right>
-        <div className="link-navbar">
-          <NavItem href="home.html">HOME</NavItem>
-          <NavItem href="portfolio.html">PORTFOLIO</NavItem>
-          <NavItem href="contact-me.html">CONTACT ME</NavItem>
-        </div>
+        <NavItem href="/">HOME</NavItem>
+        <NavItem href="/Portfolio">PORTFOLIO</NavItem>
+        <NavItem href="/Contact">CONTACT ME</NavItem>
       </Navbar>
-    </div>
-  );
+    </div>;
 };
 export default Nav;
