@@ -1,6 +1,5 @@
 import React from "react";
 import { Footer } from "react-materialize";
-import "./Footer.css";
 
 const FooterContent = () => {
   return (

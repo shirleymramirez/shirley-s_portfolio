@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, NavItem } from "react-materialize";
 import { Link } from "react-router-dom";
-import "./Nav.css";
 
 const Nav = () => {
   return (

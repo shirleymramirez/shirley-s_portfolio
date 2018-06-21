@@ -4,15 +4,13 @@ import Home from "./pages/Home";
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
+    return <div className="App">
         <Router>
           <div>
             <Route exact path="/" component={Home} />
           </div>
         </Router>
-      </div>
-    );
+      </div>;
   }
 }
 export default App;
