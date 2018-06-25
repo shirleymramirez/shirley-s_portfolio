@@ -7,8 +7,9 @@ const FooterContent = () => {
         moreLinks={<a className="grey-text text-lighten-4 right"  
             href="mailto:shirley.mramirez@yahoo.com?Subject=Hello%20Shirley" target="_top">
             shirley.mramirez@yahoo.com
-        </a>} /> 
-    ); 
+        </a>} 
+     /> 
+   ); 
 };
 
 export default FooterContent;

@@ -1,0 +1,11 @@
+h2.aboutMe {
+    text-align: center;
+}
+
+p.textColor {
+    text-align: center;
+}
+
+.carousel {
+    height: 600px !important;
+}

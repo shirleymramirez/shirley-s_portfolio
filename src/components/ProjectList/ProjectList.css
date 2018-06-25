@@ -1,0 +1,10 @@
+.card {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px !important;
+    padding: 0;
+    background-color: rgb(243, 223, 223);
+    -webkit-filter: drop-shadow(0px 0px 5px rgb(95, 94, 94));
+    filter: drop-shadow(0px 0px 5px #555);
+}
