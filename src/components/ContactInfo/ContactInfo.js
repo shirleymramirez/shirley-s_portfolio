@@ -1,9 +1,10 @@
 import React from "react";
 import { Section, Row, Col, Icon} from "react-materialize";
+import style from "./ContactInfo.css"
 
 const ContactInfo = () => {
   return (
-    <div>
+    <div className={style.contactContainer}>
 	   <Section>
 		  <Row className='center'>
 		    <Col s={4}>
