@@ -24,7 +24,7 @@ const ProjectList = () => {
                 <Card className={ style.card } header= { <CardTitle reveal image = { "../../../style/images/Stna.png" }
                     waves= "light"
                     alt= "Scraped-that-News-App" /> }
-                    title= "Scraped-that-News-App"
+                    title= "Scraped-that-News"
                     reveal= { 
                         <p> A web app that lets users view and leave comments on the latest news.Tech used: Mongoose and Cheerio </p>}> 
                         <p>
@@ -37,7 +37,7 @@ const ProjectList = () => {
                 <Card className={ style.card } header= { <CardTitle reveal image = { "../../../style/images/Cta.png" }
                         waves= "light"
                         alt= "Customer-Ticketing-App" />}
-                        title= "Customer-Ticketing-App"
+                        title= "Customer-Ticketing"
                         reveal= { 
                             <p> App to facilitate service for Agents and Clients using chat rooms and text messages.
                                 Tech used: twilio, socket.io, sequelize, express, etc. </p> }> 
