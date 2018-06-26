@@ -3,7 +3,7 @@ import { Carousel } from 'react-materialize';
 import style from "./Carousel.css"
 
 const CarouselContent = () => {
-    return ( <div >
+    return ( <div src="../../../../style/image/square.jpg">
         <Carousel options = {
             { fullWidth: false, indicators: true, dist: -50, padding: 10 } }
         className = { style.carousel }>

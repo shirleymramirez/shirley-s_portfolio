@@ -6,7 +6,7 @@ import style from "./Nav.css";
 const Nav = () => {
     return ( 
         <div className = { style.navBarHover }>
-            <Navbar brand="Shirley Ramirez" right>
+            <Navbar className={style.navBarColor} brand="Shirley Ramirez" right>
                 <NavItem href="/"> HOME </NavItem> 
                 <NavItem>
                     <Link to="/portfolio">PORTFOLIO</Link> 
