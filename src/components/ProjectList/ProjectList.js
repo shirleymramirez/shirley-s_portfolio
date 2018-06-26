@@ -4,7 +4,7 @@ import style from "./ProjectList.css";
 
 const ProjectList = () => {
         return ( 
-            <div> 
+            <div className={style.container}> 
                 <Card className={ style.card } header={ <CardTitle reveal image = { "../../../style/images/Sts.png" }
                     waves= "light"
                     alt= "Sport-Team-Scheduler" /> }
@@ -21,7 +21,7 @@ const ProjectList = () => {
                         </p>
                 </Card>
 
-                <Card className={ style.card } header= { <CardTitle reveal image = { "../../../style/images/Stna.png" }
+                <Card className={ style.card } header= {<CardTitle reveal image = {"../../../style/images/Stna.png"} 
                     waves= "light"
                     alt= "Scraped-that-News-App" /> }
                     title= "Scraped-that-News"

@@ -6,6 +6,7 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+
     module: {
         rules: [{
                 test: /\.js|jsx$/,
@@ -31,14 +32,6 @@ module.exports = {
                     }
                 ]
             }
-            // {
-            //     test: /\.html$/,
-            //     use: [{
-            //         loader: "html-loader",
-            //         options: { minimize: true }
-            //     }]
-
-            // }
         ]
     },
     plugins: [htmlWebpackPlugin]
