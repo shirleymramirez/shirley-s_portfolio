@@ -7,7 +7,9 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
     },
+    stats: 'errors-only',
     
+
     module: {
         rules: [
             {
@@ -46,18 +48,24 @@ module.exports = {
                     test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
                     loader: 'file-loader' 
                 }
-            // }
         ]
     },
-    // plugins: [htmlWebpackPlugin]
+
     plugins: [
         new HtmlWebPackPlugin(
             {
                 template:"./src/index.html", 
                 $: "jquery",
-                jQuery: "jquery"
+                jQuery: "jquery",
+                'window.$': 'jquery',
+                'window.jquery': 'jquery'
             }
         )
     ],
+    externals: [{
+            'materialize-css': 'Materialize',
+            jquery: 'jQuery'
+        }],
+
 
 };
