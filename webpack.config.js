@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -32,9 +33,9 @@ module.exports = {
                             localIdentName: "[name]_[local]_[hash:base64]",
                             sourceMap: true,
                             minimize: true,
-                            styles: {
-                                'materialize': true,
-                            },
+                            // styles: {
+                            //     'materialize': true,
+                            // },
                         }
                     }
                 ]
@@ -62,10 +63,16 @@ module.exports = {
             }
         )
     ],
-    externals: [{
-            'materialize-css': 'Materialize',
-            jquery: 'jQuery'
-        }],
+    //  externals: [{
+    //         materializecss: 'node-modules/materialize-css/dist/css/materialize.min.css',
+    //         materialize: 'node-modules/materialize-css/dist/js/materialize.min.js'
+    //      }]
 
+    resolve: {
+         alias: {
+            materializecss: 'node-modules/materialize-css/dist/css/materialize.min.css',
+            materialize: 'node-modules/materialize-css/dist/js/materialize.min.js'
+         }
+     }
 
 };
