@@ -33,9 +33,9 @@ module.exports = {
                             localIdentName: "[name]_[local]_[hash:base64]",
                             sourceMap: true,
                             minimize: true,
-                            // styles: {
-                            //     'materialize': true,
-                            // },
+                            styles: {
+                                'materialize': true,
+                            },
                         }
                     }
                 ]
@@ -55,7 +55,7 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin(
             {
-                template:"./src/index.html", 
+                template:"./src/index.html",
                 $: "jquery",
                 jQuery: "jquery",
                 'window.$': 'jquery',
@@ -63,15 +63,17 @@ module.exports = {
             }
         )
     ],
-    //  externals: [{
-    //         materializecss: 'node-modules/materialize-css/dist/css/materialize.min.css',
-    //         materialize: 'node-modules/materialize-css/dist/js/materialize.min.js'
-    //      }]
+    //   externals: [{
+            // materializecss: 'node-modules/materialize-css/dist/css/materialize.min.css',
+            // materialize: 'node-modules/materialize-css/dist/js/materialize.min.js',
+            // jquery:'node-modules/jquery/dist/jquery-min.js'
+    //  }]
 
     resolve: {
          alias: {
             materializecss: 'node-modules/materialize-css/dist/css/materialize.min.css',
-            materialize: 'node-modules/materialize-css/dist/js/materialize.min.js'
+            materialize: 'node-modules/materialize-css/dist/js/materialize.min.js',
+            jquery:'node-modules/jquery/dist/jquery.min.js'
          }
      }
 
