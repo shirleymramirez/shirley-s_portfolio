@@ -40,9 +40,9 @@ module.exports = {
                                 localIdentName: "[name]_[local]_[hash:base64]",
                                 sourceMap: true,
                                 minimize: true,
-                                // styles: {
-                                //     'materialize': true,
-                                // },
+                                styles: {
+                                    'materialize': true,
+                                },
                              },
                         },
                     ],
